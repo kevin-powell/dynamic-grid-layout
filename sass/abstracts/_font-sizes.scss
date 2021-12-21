@@ -1,0 +1,44 @@
+$font-sizes: (
+  small (
+    100: .625rem,
+    200: .7625rem,
+    300: .8975rem,
+    400: 1.125rem,
+    500: 1.25rem,
+    600: 1.75rem,
+    700: 2.25rem,
+    800: 2.75rem,
+    900: 3.25rem,
+  ),
+  medium (
+    100: .725rem,
+    200: .875rem,
+    300: 1rem,
+    400: 1.125rem,
+    500: 1.325rem,
+    600: 2rem,
+    700: 2.75rem,
+    800: 3.25rem,
+    900: 4rem,
+  ),
+  large (
+    100: .725rem,
+    200: .875rem,
+    300: 1rem,
+    400: 1.125rem,
+    500: 1.325rem,
+    600: 2rem,
+    700: 2.75rem,
+    800: 3.5rem,
+    900: 5rem,
+  ),
+)
+
+// $base-font-sizes (
+//   small: 1.125rem,
+//   medium: 1.25rem,
+//   large: 1.5rem
+// )
+// TODO: build @for loop for a font-scale
+
+

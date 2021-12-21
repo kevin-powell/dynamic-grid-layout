@@ -1,0 +1,6 @@
+@use '../utilities/grid' as *;
+
+.with-sidebar {
+  @extend .grid !optional;
+  grid-template-columns: 1fr 20rem;
+}

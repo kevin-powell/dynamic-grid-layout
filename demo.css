@@ -1,0 +1,19 @@
+header {
+  /* --bg-deg: 10deg; */
+  padding-block: max(10vh, 5rem);
+  text-align: center;
+
+  position: relative;
+}
+
+.example {
+  font-size: 1rem;
+  padding: var(--spacer);
+
+  position: fixed;
+  inset: auto 1rem 1rem auto;
+  /* top: auto;
+  right: 1rem;
+  bottom: 1rem;
+  left: auto; */
+}

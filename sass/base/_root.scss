@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+
+:root { 
+  --ff-primary: #{$ff-primary};
+  --ff-secondary: #{$ff-secondary};
+  --ff-accent: #{$ff-accent};
+
+  --spacer: #{$spacer};
+
+  @each $color, $shade in $colors {
+    
+    @each $property, $value in $shade {
+      --clr-#{$color}-#{$property}: #{$value};
+    } 
+  }
+
+  @each $screen-size, $property in $font-sizes {
+    @if $screen-size == small {
+      @each $prop, $value in $property { 
+        --fs-#{$prop}: #{$value};
+      }
+    } @else { 
+      @include mq($screen-size) {
+        @each $prop,
+        $value in $property {
+          --fs-#{$prop}: #{$value};
+        }
+      }
+    }
+  }
+}
