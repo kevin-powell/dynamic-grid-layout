@@ -97,9 +97,16 @@ dd {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ff-secondary);
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -142,8 +149,8 @@ select {
   }
 
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -444,7 +451,12 @@ body {
 
 .bg-gradient {
   color: hsl(var(--clr-neutral-100));
-  background-image: linear-gradient(var(--bg-deg, -45deg), hsl(var(--clr-primary-400)), hsl(var(--clr-secondary-500)), hsl(var(--clr-accent-500)));
+  background-image: linear-gradient(
+    var(--bg-deg, -45deg),
+    hsl(var(--clr-primary-400)),
+    hsl(var(--clr-secondary-500)),
+    hsl(var(--clr-accent-500))
+  );
 }
 
 .fs-100 {
@@ -488,7 +500,7 @@ body {
 }
 
 .container {
-  max-width: var(--width, 60ch);
+  max-width: var(--width, 140ch);
   margin-inline: auto;
   padding-inline: var(--spacer);
 }
@@ -498,7 +510,10 @@ body {
   gap: var(--gap, var(--spacer));
 }
 
-.grid, .with-sidebar, .main-layout, .even-columns {
+.grid,
+.with-sidebar,
+.main-layout,
+.even-columns {
   display: grid;
   gap: var(--gap, var(--spacer));
 }
@@ -508,11 +523,6 @@ body {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
-}
-
-.card {
-  padding: var(--spacer);
-  box-shadow: var(--shadow, var(--shadow-1));
 }
 
 .main-layout {
@@ -525,3 +535,9 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+header {
+  padding-block: max(10vh, 5rem);
+  text-align: center;
+  position: relative;
+  margin-bottom: 10vh;
+}

@@ -1,9 +1,0 @@
-@use '../abstracts/' as *;
-
-@each $screen-size, $property in $font-sizes {
-  @if $screen-size == small {
-    @each $prop, $value in $property { 
-      .fs-#{$prop} { font-size: var(--fs-#{$prop}) }
-    }
-  }
-}

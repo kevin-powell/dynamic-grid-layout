@@ -1,7 +1,0 @@
-@use '../utilities/grid' as *;
-
-.main-layout {
-  @extend .grid !optional;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-}
