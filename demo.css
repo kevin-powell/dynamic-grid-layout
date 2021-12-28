@@ -2,7 +2,6 @@
   --ff-primary: Heebo, sans-serif;
   --ff-secondary: Bungee, cursive;
   --ff-accent: Bungee Shade, cursive;
-  
 }
 
 /* Box sizing rules */
@@ -111,9 +110,8 @@ body {
 
 .product-grid {
   display: grid;
-  gap: .125rem;
-  grid-template-columns: 
-    repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.125rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
 .card {
@@ -124,9 +122,9 @@ body {
 .card__content {
   background: white;
   align-self: end;
-  margin: .5rem .5rem 2rem;
-  padding: .5rem;
-  box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
+  margin: 0.5rem 0.5rem 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 0.1);
 }
 
 .card__title {
@@ -145,12 +143,12 @@ body {
   object-fit: cover;
 }
 
-@media (min-width: 60em){
+@media (min-width: 60em) {
   .card__img {
     aspect-ratio: 1 / 1;
   }
 
-  .card.featured{
+  .card.featured {
     grid-row: span 2;
     grid-column: span 2;
   }
@@ -162,4 +160,23 @@ body {
   .card.featured .card__title {
     font-size: 1.75rem;
   }
+}
+
+.main-title {
+  font-size: clamp(2rem, 5vw + 1rem, 5rem);
+  line-height: 1;
+  color: white;
+  background: linear-gradient(-45deg, blue, red);
+  padding: 0.125em 0.5em;
+  margin-bottom: 1em;
+
+  width: fit-content;
+}
+
+p.max-content {
+  width: max-content;
+}
+
+p.min-content {
+  width: min-content;
 }
